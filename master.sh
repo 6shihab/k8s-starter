@@ -1,6 +1,3 @@
-sudo rm /etc/containerd/config.toml
-sudo systemctl restart containerd
-
 sudo kubeadm init
 
 mkdir -p $HOME/.kube
