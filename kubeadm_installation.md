@@ -36,6 +36,7 @@ sudo vi /etc/fstab
 Delete this line:  /swap.img       none    swap    sw      0       0  
 
 Run the following commands on both the master and worker nodes to prepare them for kubeadm.
+Or Execute common.sh from the repository
 
 ```bash
 sudo swapoff -a
@@ -85,6 +86,7 @@ sudo systemctl restart containerd
 ```
 
 1. Initialize the Kubernetes master node.
+   or execute master.sh from the repository
 
     ```bash
     sudo kubeadm init
