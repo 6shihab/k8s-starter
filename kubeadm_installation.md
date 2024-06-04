@@ -33,7 +33,7 @@ systemctl enable kubelet
 ```bash
 sudo vi /etc/fstab
 ```
-Delete this /swap.img       none    swap    sw      0       0  line
+Delete this line: ** /swap.img       none    swap    sw      0       0  **
 
 Run the following commands on both the master and worker nodes to prepare them for kubeadm.
 
