@@ -70,13 +70,6 @@ sudo apt install -y kubelet kubeadm kubectl kubernetes-cni
 ```
 
 
-**Sample Command run on master node**
-
-<kbd>![image](https://github.com/paragpallavsingh/kubernetes-kickstarter/assets/40052830/a4e7a4af-31fa-40cf-bb9e-64ba18999cb5)</kbd>
-
-<kbd>![image](https://github.com/paragpallavsingh/kubernetes-kickstarter/assets/40052830/acf157b8-5c7b-44e7-91ef-b5437053be60)</kbd>
-
-<kbd>![image](https://github.com/paragpallavsingh/kubernetes-kickstarter/assets/40052830/8f960aae-3706-43cd-bac8-1903fbe8196d)</kbd>
 
 ---
 
@@ -96,7 +89,6 @@ sudo systemctl restart containerd
     ```bash
     sudo kubeadm init
     ```
-    <kbd>![image](https://github.com/paragpallavsingh/kubernetes-kickstarter/assets/40052830/4fed3d68-eb41-423d-b83f-35c3cc11476e)</kbd>
 
     After succesfully running, your Kubernetes control plane will be initialized successfully.
 
@@ -110,9 +102,6 @@ sudo systemctl restart containerd
     sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
     sudo chown $(id -u):$(id -g) $HOME/.kube/config
     ```
-
-    <kbd>![image](https://github.com/paragpallavsingh/kubernetes-kickstarter/assets/40052830/f647adc1-0976-490e-b9c9-f6f96908d6fe)</kbd>
-
 
 4. Apply Weave network:
 
@@ -145,7 +134,6 @@ sudo systemctl restart containerd
     ```bash
     sudo kubeadm reset pre-flight checks
     ```
-    <kbd>![image](https://github.com/paragpallavsingh/kubernetes-kickstarter/assets/40052830/3d29912b-f1a3-4e0b-a6ee-6c9cc5db49fb)</kbd>
 
 2. Paste the join command you got from the master node and append `--v=5` at the end.
 *Make sure either you are working as sudo user or use `sudo` before the command*
