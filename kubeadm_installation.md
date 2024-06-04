@@ -73,7 +73,7 @@ sudo apt install -y kubelet kubeadm kubectl kubernetes-cni
 
 ---
 
-##Prerequisit for master node
+## Prerequisit for master node
 Turn off ufw or allow this ports: 6443/tcp, 2379–2380/tcp, 10250/tcp, 10251/tcp, 10252/tcp 10255/tcp
 
 ## Master Node
