@@ -23,6 +23,9 @@ sudo rm /etc/containerd/config.toml
 sudo systemctl daemon-reload
 sudo systemctl restart containerd
 
+sudo rm /etc/containerd/config.toml
+sudo systemctl restart containerd
+
 # install kubeadm
 
 
