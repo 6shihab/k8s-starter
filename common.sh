@@ -29,6 +29,7 @@ sudo usermod -aG docker ${USER}
 
 sudo rm /etc/containerd/config.toml
 sudo systemctl restart docker 
+sudo systemctl restart containerd
 
 # install kubeadm
 
